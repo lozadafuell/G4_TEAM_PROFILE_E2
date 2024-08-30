@@ -1,0 +1,120 @@
+<?php
+  $hour = date("H");
+  if ($hour < 12) {
+      $greeting = "Good morning!";
+  } elseif ($hour < 18) {
+      $greeting = "Good afternoon!";
+  } else {
+      $greeting = "Good evening!";
+  }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TEAM PROFILE</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <h1>GROUP 4 TEAM PROFILE</h1>
+    <div class="our_team">
+        <div class="team_member">
+          <div class="member_img">
+            <img src="f.png" alt="our_team">
+            <div class="social_media">
+               <a href="https://www.facebook.com/fuell.ocado?mibextid=ZbWKwL" target="_blank" class="facebook item">
+		<i class="fab fa-facebook-f"></i></a>
+               </div>
+          </div>
+          <h3>fuel lozada</h3>
+          <span>Team Leader</span>
+          <p>“FUELL”</p>
+          <p>From Muntinlupa</p>
+          <p>I can troubleshoot and reformat computers</p>
+          <p>I can also do the same to laptops</p>
+          <p>I am a digital artist and I also aspire to become a photographer</p>
+          <p>You can describe me as an optimistic person</p>
+	<button onclick="toggleInfo(this)">Toggle Info</button>
+        </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="s.png" alt="our_team">
+             <div class="social_media">
+               <a href="https://www.facebook.com/profile.php?id=61554360257531&mibextid=ZbWKwL" target="_blank" class="facebook item">
+		<i class="fab fa-facebook-f"></i></a>
+               </div>
+          </div>
+          <h3>sdyney Garcia</h3>
+          <span>Team Member</span>
+          <p>“SYD”</p>
+          <p>From Laguna</p>
+          <p>I love listening to music</p>
+          <p>I like rainy season</p>
+          <p>You can describe me as a simple person</p>
+	<button onclick="toggleInfo(this)">Toggle Info</button>
+      </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="k.png" alt="our_team">
+             <div class="social_media">
+               <a href="https://www.instagram.com/cantfind.km/" target="_blank" class="instagram item">
+		<i class="fab fa-instagram"></i></a>
+             </div>
+          </div>
+          <h3>stephen kim acayan</h3>
+          <span>Team Member</span>
+          <p>“KIM”</p>
+          <p>From Parañaque</p>
+          <p>I love sponty trips</p>
+          <p>I enjoy taking pictures</p>
+          <p>I’m good at playing online games</p>
+          <p>You can describe me as a positive person</p>
+	<button onclick="toggleInfo(this)">Toggle Info</button>
+      </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="n.png" alt="our_team">
+             <div class="social_media">
+               <a href="https://www.facebook.com/profile.php?id=100084846622792&mibextid=ZbWKwL" target="_blank" class="facebook item">
+		<i class="fab fa-facebook-f"></i></a>
+               </div>
+          </div>
+          <h3>NARCISO IV ybiosa</h3>
+          <span>Team Member</span>
+          <p>“FORT”</p>
+          <p>From Muntinlupa</p>
+          <p>I'm brave man</p>
+          <p>I'm a Dragon Boat paddler</p>
+	<button onclick="toggleInfo(this)">Toggle Info</button>
+
+      </div>
+      	<div class="team_member">
+           <div class="member_img">
+             <img src="ss.png" alt="our_team">
+             <div class="social_media">
+               <a href="https://www.facebook.com/shandy.sarmiento.7?mibextid=ZbWKwL" target="_blank" class="facebook item">
+		<i class="fab fa-facebook-f"></i></a>
+               </div>
+          </div>
+          <h3>shandy sarmiento</h3>
+          <span>Team Member</span>
+          <p>“SHAN”</p>
+          <p>From Muntinlupa</p>
+          <p>I am enthusiastic</p>
+          <p>Self-motivated</p>
+          <p>A Responsible citizen</p>
+          <p>I love watching Korean series</p> 
+	<button onclick="toggleInfo(this)">Toggle Info</button> 
+    </div>
+</div>
+ <script>
+        function toggleInfo(button) {
+            const member = button.parentElement;
+            const paragraphs = member.querySelectorAll('p');
+            paragraphs.forEach(p => {
+                p.style.display = p.style.display === 'none' ? 'block' : 'none';
+            });
+        }
+    </script>	
